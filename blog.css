@@ -1,0 +1,243 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99 ;
+    transition: 0.5s;
+}
+
+header:hover{
+    padding: 40px 100px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99 ;
+    transition: 0.5s;
+}
+footer:hover{
+    padding: 40px 100px;
+}
+
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+    transition: 0.5s;
+}
+
+.logoo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+    transition: 0.5s;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 0.9em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.navigation a:hover{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.navigate a:hover{
+    font-size: 1.22em;
+    font-weight: bold;
+}
+
+.navigate a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.navigation a::after{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+
+.navigate a::after{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigate a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    min-height: 100vh;
+    background: url('arkaplan.jpg') no-repeat;
+    background-size: cover;
+    background-origin: padding-box;
+    background-position: center;
+}
+
+.navigation .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.navigation .btnLogin-popup:hover{
+    background: #fff;
+    color: red;
+}
+
+.navigate .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.search{
+    background-color: whitesmoke;
+    height: 40px;
+    align-items: center;
+    padding: 4px;
+    border-radius: 40px;
+    display: flex;
+}
+
+.query{
+    float: left;
+    background: none;
+    border: none;
+    outline: none;
+    color: #3f3f3f;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    width: 0;
+    transition: 1s;
+    padding-right: 2.5px;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.btn.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3f3f3f;
+    font-size: 16px;
+    float: right;
+    width: 50px;
+    height: 50px;
+    border: transparent;
+    border-style: solid;
+}
+
+.search:hover > .query{
+    width: 600px;
+}
+
+.query:hover > .query{
+    width: 600px;
+}
+
+.logo:hover{
+    font-size: 2.1em;
+}
+
+.logoo:hover{
+    font-size: 3em;
+}
+
+.clear{
+    border-radius: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    color: #3f3f3f;
+    border-color: transparent;
+}
+
+.ses_buton{
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    height: 30px;
+    width: 40px;
+    display: flex;
+    float: right;
+    border-color: transparent;
+}
